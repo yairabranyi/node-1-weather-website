@@ -15,7 +15,8 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `Today it's ${body.daily.data[0].summary} The Temprature is currently ${body.currently.temperature}, and the precipProbability is ${body.currently.precipProbability}.`
+        `Today it's ${body.daily.data[0].summary} The Temprature is currently ${body.currently.temperature}, and the precipProbability is ${body.currently.precipProbability}.
+        max temp is ${body.daily.data[0].temperatureHigh}`
       )
     }
   })
